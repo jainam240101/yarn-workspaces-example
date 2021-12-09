@@ -1,9 +1,11 @@
 /** @format */
 
 import { Router } from "express";
+import { createUser, Login } from "./users";
 
-const router = Router();
+const userRouter = Router();
 
-router.post("/sign-up",signUpUser)
-router.post("/log-in",loginUser)
+userRouter.post("/sign-up", createUser);
+userRouter.post("/log-in", Login);
 
+export default userRouter
