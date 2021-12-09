@@ -21,10 +21,6 @@ const BlogSchema = new mongoose.Schema(
       type: mongoose.Types.ObjectId,
       required: true,
     },
-    totalLikes: {
-      type: Number,
-      default: 0,
-    },
   },
   {
     timestamps: {
