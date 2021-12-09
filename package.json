@@ -1,0 +1,11 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "yarn --cwd backend start"
+  }
+}
