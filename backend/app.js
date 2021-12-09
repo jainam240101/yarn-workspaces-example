@@ -16,7 +16,11 @@ app.use(logger("dev"));
 app.use(express.urlencoded({ extended: false }));
 app.use("/api", indexRouter);
 
+app.get("/", (req, res) => {
+  res.status(200).send({ message: "Check Logs" });
+});
+
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
-  console.log(`Backent on port ${port}`);
+  console.log(`Backend on port ${port}`);
 });
