@@ -20,6 +20,10 @@ app.get("/", (req, res) => {
   res.status(200).send({ message: "Check Logs" });
 });
 
+app.get("/hello", (req, res) => {
+  res.status(200).send({ message: "Hello Route" });
+});
+
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
   console.log(`Backend on port ${port}`);

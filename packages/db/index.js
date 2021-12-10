@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 
 export const dbConnect = () => {
   mongoose
-    .connect("mongodb://mongodb:27017/workspace")
+    .connect("mongodb+srv://root:jainam@cluster0.payen.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
     .then(() => {
       console.log("Database connection successful");
     })

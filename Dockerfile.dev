@@ -9,6 +9,7 @@ COPY ./packages/db/package.json ./packages/db/
 COPY ./packages/schema/package.json ./packages/schema/
 COPY ./yarn.lock ./
 RUN yarn install
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 COPY ./backend ./backend
 COPY ./packages ./packages
