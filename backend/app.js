@@ -4,6 +4,9 @@ import express from "express";
 import cors from "cors";
 import indexRouter from "./routes";
 import { dbConnect } from "@monorepo/db";
+import dotnev from "dotenv";
+
+dotnev.config();
 const logger = require("morgan");
 
 const app = express();
