@@ -27,6 +27,10 @@ app.get("/hello", (req, res) => {
   res.status(200).send({ message: "Hello Route" });
 });
 
+app.get("/new-feature", (req, res) => {
+  res.status(200).send({ message: "This is a New Feature Whats up" });
+});
+
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
   console.log(`Backend on port ${port}`);
